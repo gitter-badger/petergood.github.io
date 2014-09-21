@@ -1,0 +1,166 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	font-family: 'Lato', sans-serif;
+	-webkit-user-select: none;       
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+	-o-user-select: none;
+	user-select: none;
+}
+
+.container {
+	background-color: #247940;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: none;
+}
+
+.boot-screen {
+	width: 300px;
+	height: 100px;
+	text-align: center;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -150px;
+	margin-top: -50px;
+	color: white;
+}
+
+#the-end {
+	width: 500px;
+	text-align: center;
+	position: fixed;
+	left: 50%;
+	margin-left: -250px;
+	top: 100px;
+	color: white;
+	display: none;
+}
+
+.icon-holder {
+	margin-top: 30px;
+	margin-left: 30px;
+	width: 60px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.icon-holder #ico {
+	width: 32px;
+	height: 32px;
+	background: url("../img/firefox.png");
+	position: relative;
+	left: 14px;
+}
+
+.icon-holder #txt {
+	text-align: center;
+	color: #E9EBE9;
+}
+
+.instruction-holder {
+	position: fixed;
+	bottom: 20px;
+	font-size: 30px;
+	color: white;
+	width: 800px;
+	left: 50%;
+	margin-left: -400px;
+	text-align: center;
+	padding: 5px;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+    display: none;
+}
+
+.browser-holder {
+	width: 800px;
+	height: 600px;
+	border: 1px solid #C1C1C1;
+	position: fixed;
+	top: 40px;
+	left: 50%;
+	margin-left: -400px;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	background-color: white;
+	display: none;
+	-webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.browser-holder #top-bar {
+	background-color: #C1C1C1;
+}
+
+.browser-holder #browser-content {
+	width: 800px;
+	height: 553px;
+	text-align: center;
+}
+
+#browser-content #error {
+	display: none;
+}
+
+#browser-content #google {
+	display: none;
+}
+
+#browser-content #home-page {
+}
+
+#nav-bar {
+	padding: 3px;
+}
+
+#nav-bar #url-input {
+	width: 96%;
+	outline: 0;
+	border: 0;
+	text-align: center;
+	padding: 3px;
+	font-family: 'Lato', sans-serif;
+}
+
+#nav-bar #go-button {
+	display: inline-block;
+	margin-left: 3px;
+	background: url("../img/go-arrow.png");
+	width: 16px;
+	height: 16px;
+	position: relative;
+	top: 3px;
+	left: 3px;
+	cursor: pointer;
+}
+
+#google-input {
+	width: 400px;
+	padding: 3px;
+	font-size: 17px;
+	font-family: 'Lato', sans-serif;
+	outline: none;
+	height: 17px;
+}
+
+#google-search {
+    cursor:pointer; 
+    width:70px; 
+    height: 29px; 
+    line-height: 29px;
+    color: white;  
+    display: inline-block;
+    position: relative;
+    left: 3px;
+    top: 7px;
+}
