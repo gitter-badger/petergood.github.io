@@ -1,3 +1,7 @@
+/* 
+ * Main styles
+ */
+
 @import url(http://fonts.googleapis.com/css?family=Lato:300);
 
 body {
@@ -54,7 +58,7 @@ body {
 .icon-holder #ico {
 	width: 32px;
 	height: 32px;
-	background: url("../img/firefox.png");
+	background: url("../img/Firefox.png");
 	position: relative;
 	left: 14px;
 }
