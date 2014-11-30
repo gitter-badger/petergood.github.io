@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+	<head>
+		<title>KeyCrush</title>
+		<meta charset="utf-8">
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animations.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/game.js"></script>
+		<script src="js/event.js"></script>
+
+		<script>
+		  window.fbAsyncInit = function() {
+		    FB.init({
+		      appId      : '998070916887932',
+		      xfbml      : true,
+		      version    : 'v2.2'
+		    });
+
+		    // ADD ADDITIONAL FACEBOOK CODE HERE
+		  };
+
+		  (function(d, s, id){
+		     var js, fjs = d.getElementsByTagName(s)[0];
+		     if (d.getElementById(id)) {return;}
+		     js = d.createElement(s); js.id = id;
+		     js.src = "//connect.facebook.net/en_US/sdk.js";
+		     fjs.parentNode.insertBefore(js, fjs);
+		   }(document, 'script', 'facebook-jssdk'));
+		</script>
+	</head>
+
+	<body>
+		<div id="game" style="display: none">
+			<div id="clock" style="position: fixed; font-size: 30px; font-weight: bold; left: 5px; top: 5px;">
+				60
+			</div>
+
+			<div id="points" style="position: fixed; font-size: 30px; font-weight: bold; right: 5px; top: 5px;">
+				0
+			</div>
+
+			<div class="grid-holder">
+				<div class="box" x="1" y="3">
+				</div>
+
+				<div class="box" style="border-left: 0" x="2" y="3">
+				</div>
+
+				<div class="box" style="border-left: 0"  x="3" y="3">
+				</div>
+
+				<div class="box"  x="1" y="2">
+				</div>
+
+				<div class="box" style="border-left: 0"  x="2" y="2">
+				</div>
+
+				<div class="box" style="border-left: 0"  x="3" y="2">
+				</div>
+
+				<div class="box"  x="1" y="1">
+				</div>
+
+				<div class="box" style="border-left: 0"  x="2" y="1">
+				</div>
+
+				<div class="box" style="border-left: 0"  x="3" y="1">
+				</div>
+			</div>
+
+			<div class="err-overlay">
+				<div class="err-body">
+					-10s
+				</div>
+			</div>
+
+			<!--<div class="gameover-overlay">
+				<div class="gameover-body animated infinite shake">
+					Game Over!
+				</div>
+			</div>-->
+
+			<div class="bottom-bar">
+				<div style="width: 50%; margin: 0 auto;">
+					<div style="width: calc(100% / 3); float: left; display: inline-block;">
+						<div style="padding: 5px">
+							<div class="key" id="q">Q</div>
+						</div>
+					</div>
+
+					<div style="width: calc(100% / 3); float: left; display: inline-block;">
+						<div style="padding: 5px">
+							<div class="key" id="w">W</div>
+						</div>
+					</div>
+
+					<div style="width: calc(100% / 3); float: left; display: inline-block;">
+						<div style="padding: 5px">
+							<div class="key" id="e">E</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="gameover-menu">
+			<div style="font-size: 50px; font-weight: bold; text-align: center;">Game Over!</div><br>
+			You scored: <div style="display: inline-block" id="final-score"></div> points!<Br><br>
+
+			<div class="button" id="restart">Play again</div>
+			<div class="button" id="main-menu">Main menu</div>
+		</div>
+
+		<div id="menu">
+			<div class="menu-container" id="main">
+				<div style="font-size: 70px; font-weight: bold; text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);">KeyCrush</div><br><br>
+
+				<div class="button" id="start">Start</div>
+				<div class="button" id="about">About</div><br><br>
+
+				Game by petergood
+			</div>
+
+			<div class="menu-container" id="about-menu" style="display: none; font-size: 20px;">
+				KeyCrush is a game all about speed. Press the key, which is under the black box. Only use these keys:<Br><br>
+
+				<div class="key">Q</div>
+				<div class="key">W</div>
+				<div class="key">E</div><br><Br>
+
+				You only have 60 seconds to pass as many black boxes as possible. For every mistake, you loose 10 seconds. Good luck!
+
+				<br><br><br>
+
+				<div class="button" id="back">Back</div>
+			</div>
+		</div>
+	</body>
+</html>
