@@ -1,0 +1,44 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    margin-top: 20px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 55px;
+    color: #252525;
+}
+
+.title-scene {
+    position: absolute; 
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 55px;
+    z-index: 999;
+    margin-left: 50px;
+}
+
+.content-scene {
+    position: absolute; 
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+    z-index: 999;
+    margin-left: 50px;
+}
+
+.container {
+    width: 1152px;
+    margin: 0 auto;    
+    font-family: 'Roboto', sans-serif;
+}
+
+.container .block {
+    width: calc(100% / 4);
+    float: left;
+    margin: 0;
+}

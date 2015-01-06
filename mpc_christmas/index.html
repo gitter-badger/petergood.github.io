@@ -1,0 +1,568 @@
+<!DOCTYPE HTML>
+    <head>
+        <title>Święta z MPCForum.pl!</title>
+        <meta charset="utf-8">   
+        <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/snowman.css" rel="stylesheet">
+        <link href="css/bowl.css" rel="stylesheet">
+        <link href="css/present.css" rel="stylesheet">
+        <link href="css/firework.css" rel="stylesheet">
+        <link href="css/snowman-scene.css" rel="stylesheet">
+        <link href="css/soup-scene.css" rel="stylesheet">
+        <link href="css/presents-scene.css" rel="stylesheet">
+        <link href="css/firework-scene.css" rel="stylesheet">
+        <link href="css/player.css" rel="stylesheet">
+        <link href="css/sweet-alert.css" rel="stylesheet">
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/star_generator.js"></script>
+        <script src="js/player.js"></script>
+        <script src="js/sweet-alert.min.js"></script>
+        <script src="js/screen_checker.js"></script>
+    </head>
+
+    <body>
+        <div class="title">Święta z MPCForum.pl</div>
+        <div style="text-align: center; margin-bottom: 20px; font-size: 15px;font-family: 'Lobster', cursive;">Wszystkie elementy na stronie zostały stworzone za pomocą CSS.</div>
+        
+        <div class="container">
+            <div class="block">
+                <div class="ball ball3">
+                    <div class="button" style="top: 10px; left: 10px; float: left;"></div>
+                    <div class="button" style="top: 10px; left: 5px;"></div>
+                    <div class="carrot"></div>
+                </div>
+                <!--<div class="twig-left"></div>
+                <div class="twig-right"></div>-->
+                <div class="ball ball2">
+                    <div class="button" style="top: 15px;"></div>
+                    <div class="button" style="top: 30px;"></div>
+                </div>
+                <div class="ball ball1">
+                    <div class="button" style="top: 15px;"></div>
+                    <div class="button" style="top: 30px;"></div>
+                    <div class="button" style="top: 45px;"></div>
+                </div>
+            </div>
+            
+            <div class="block">
+                <div class="spoon-holder">
+                    <div class="spoon"></div>
+                    <div class="handle"></div>
+                </div>
+                
+                <div class="bowl">
+                    <div class="soup"></div>
+                </div>
+            </div>
+            
+            <div class="block">
+                <div class="present">
+                    <div class="band-vertical"></div>
+                    <div class="band-horizontal"></div>
+                </div>
+            </div>
+            
+            <div class="block">
+                <div class="firework-holder">
+                    <div class="top"></div>
+                    <div class="firework"></div>
+                    <div class="fuse"></div>
+                    <div class="stick"></div>
+                </div>
+            </div>
+            
+            <div style="clear: both;"></div>
+        </div>
+        
+        <div id="snowman-scene" class="container" style="margin-top: 30px; background-color: #66CCFF; width: 100%; min-width: 1152px; margin-bottom: 20px; height: 800px;">
+            <div class="container">
+                <div class="title-scene" style="margin-top: 20px;">Zabawa na dworze</div>
+                <div class="content-scene" style="margin-top: 80px;">Zabawa na dworze jest bardzo ważna.<br> Można odpocząć od gapienia się w monitor.<br> Można też ulepić bałwana. </div>
+                
+                <!--<div class="bough"></div>
+                
+                <div class="bauble-holder" style="margin-top: 190px; margin-left: 160px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: magenta"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 150px; margin-left: 400px;">
+                    <div class="clip"></div>
+                    <div class="bauble"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 170px; margin-left: 280px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: green"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 130px; margin-left: 510px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: blue"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 110px; margin-left: 620px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: orange"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 90px; margin-left: 730px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: pink"></div>
+                </div>
+                
+                <div class="trunk">
+                    <div class="hollow"></div>
+                </div>-->
+                
+                <div class="snowman-holder">
+                    <div class="ball ball3">
+                        <div class="button" style="top: 10px; left: 10px; float: left;"></div>
+                        <div class="button" style="top: 10px; left: 5px;"></div>
+                        <div class="carrot"></div>
+                    </div>
+                    <!--<div class="twig-left"></div>
+                    <div class="twig-right"></div>-->
+                    <div class="ball ball2">
+                        <div class="button" style="top: 15px;"></div>
+                        <div class="button" style="top: 30px;"></div>
+                    </div>
+                    <div class="ball ball1">
+                        <div class="button" style="top: 15px;"></div>
+                        <div class="button" style="top: 30px;"></div>
+                        <div class="button" style="top: 45px;"></div>
+                    </div>
+                </div>
+                
+                <div class="snow-drift"></div>
+                
+                <div class="spade-holder">
+                    <div class="handle"></div>
+                    <div class="spade"></div>
+                </div>
+                
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+        
+        <div id="soup-scene" class="container" style="margin-top: 30px; background-color: #993333; width: 100%; min-width: 1152px; margin-bottom: 0px;">
+            <div class="container">
+                <div class="title-scene" style="margin-top: 20px">Wigilia</div>
+                <div class="content-scene" style="margin-top: 80px">Wigilia jest to czas<br> gdy możemy wspólnie z rodziną spożyć posiłek.</div>
+                
+                <div class="table">
+                    <div class="fish-dish-holder">
+                        <div class="dish-end-left"></div>
+                        <div class="dish">
+                            <div class="fish-holder">
+                                <div class="eye"></div>
+                                <div class="head"></div>
+                                <div class="body"></div>
+                                <div class="back"></div>
+                                <div class="tail"></div>
+                            </div>
+                        </div>
+                        <div class="dish-end-right"></div>
+                    </div>
+                    
+                    <div class="small-bowl" style="margin-top: 210px; margin-left: 350px">
+                        <div class="small-soup" style="background-color: #666633"></div>
+                    </div>
+                    
+                    <div class="small-bowl" style="margin-top: 215px; margin-left: 420px">
+                        <div class="small-soup" style="background-color: blue"></div>
+                    </div>
+                    
+                    <div class="small-bowl" style="margin-top: 405px; margin-left: 500px">
+                        <div class="small-soup" style="background-color: #660033"></div>
+                    </div>
+                    
+                    
+                    <div class="small-bowl" style="margin-top: 215px; margin-left: 500px">
+                        <div class="small-soup" style="background-color: #990000"></div>
+                    </div>
+                    
+                    <div class="small-bowl" style="margin-top: 410px; margin-left: 430px">
+                        <div class="small-soup" style="background-color: "></div>
+                    </div>
+                    
+                    <div class="small-bowl" style="margin-top: 405px; margin-left: 340px">
+                        <div class="small-soup" style="background-color: #669999"></div>
+                    </div>
+                    
+                    <div class="bowl-holder" style="top: 580px; left: 600px">
+                        <div class="spoon-holder" style="margin: 0; position: relative; float: right; margin-top: 15px">
+                            <div class="spoon"></div>
+                            <div class="handle"></div>
+                        </div>
+
+                        <div class="bowl" style="margin: 0">
+                            <div class="soup"></div>
+                        </div>    
+                    </div>
+                    
+                    <div class="bowl-holder" style="top: 480px; left: 400px">
+                        <div class="spoon-holder" style="margin: 0; position: relative; float: right; margin-top: 15px">
+                            <div class="spoon"></div>
+                            <div class="handle"></div>
+                        </div>
+
+                        <div class="bowl" style="margin: 0">
+                            <div class="soup"></div>
+                        </div>    
+                    </div>
+                    
+                    <div class="bowl-holder" style="top: 380px; left: 200px">
+                        <div class="spoon-holder" style="margin: 0; position: relative; float: right; margin-top: 15px">
+                            <div class="spoon"></div>
+                            <div class="handle"></div>
+                        </div>
+
+                        <div class="bowl" style="margin: 0">
+                            <div class="soup"></div>
+                        </div>    
+                    </div>
+                    
+                    <div class="bowl-holder" style="top: -280px; left: 600px">
+                        <div class="spoon-holder" style="margin: 0; position: relative; float: right; margin-top: 15px">
+                            <div class="handle"></div>
+                            <div class="spoon"></div>
+                        </div>
+
+                        <div class="bowl" style="margin: 0">
+                            <div class="soup"></div>
+                        </div>    
+                    </div>
+                    
+                    <div class="bowl-holder" style="top: -380px; left: 400px">
+                        <div class="spoon-holder" style="margin: 0; position: relative; float: right; margin-top: 15px">
+                            <div class="handle"></div>
+                            <div class="spoon"></div>
+                        </div>
+
+                        <div class="bowl" style="margin: 0">
+                            <div class="soup"></div>
+                        </div>    
+                    </div>
+                    
+                    <div class="bowl-holder" style="top: -480px; left: 200px">
+                        <div class="spoon-holder" style="margin: 0; position: relative; float: right; margin-top: 15px">
+                            <div class="handle"></div>
+                            <div class="spoon"></div>
+                        </div>
+
+                        <div class="bowl" style="margin: 0">
+                            <div class="soup"></div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="presents-scene" class="container" style="margin-top: 0px; background-color: #FFFF99; width: 100%; min-width: 1152px; margin-bottom:0px;">
+            <div class="container">
+                
+                <div class="title-scene" style="margin-top: 20px; color: #333333">Prezenty</div>
+                <div class="content-scene" style="margin-top: 80px; color: #333333">Większość dzieci zapewne tylko na to czekają.</div>
+                
+                <div style="position: relative; height: 150px;"></div>
+                
+                <!--<div class="window">
+                    <div class="divider-horizontal"></div>
+                    <div class="divider-vertical"></div>
+                </div>-->
+                
+                <!--<div class="window" style="left: 998px;">
+                    <div class="divider-horizontal"></div>
+                    <div class="divider-vertical"></div>
+                </div>-->
+                
+                <div class="branch" style="margin-left: 540px; margin-top: 80px; transform: rotate(40deg)"></div>
+                <div class="branch" style="margin-left: 540px; margin-top: 180px; transform: rotate(40deg)"></div>
+                <div class="branch" style="margin-left: 540px; margin-top: 280px; transform: rotate(40deg)"></div>
+                <div class="branch" style="margin-left: 540px; margin-top: 380px; transform: rotate(40deg)"></div>
+                
+                <div class="branch" style="margin-left: 360px; margin-top: 80px; transform: rotate(140deg)"></div>
+                <div class="branch" style="margin-left: 360px; margin-top: 180px; transform: rotate(140deg)"></div>
+                <div class="branch" style="margin-left: 360px; margin-top: 280px; transform: rotate(140deg)"></div>
+                <div class="branch" style="margin-left: 360px; margin-top: 380px; transform: rotate(140deg)"></div>
+                
+                <!-- LEFT SIDE -->
+                <div class="bauble-holder" style="margin-top: 155px; margin-left: 400px;">
+                    <div class="clip"></div>
+                    <div class="bauble"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 115px; margin-left: 450px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: blue"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 73px; margin-left: 500px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: orange"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 30px; margin-left: 550px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: red"></div>
+                </div>
+                
+                
+                <div class="bauble-holder" style="margin-top: 255px; margin-left: 400px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: darkgreen"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 215px; margin-left: 450px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: magenta"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 173px; margin-left: 500px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: purple"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 130px; margin-left: 550px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: white"></div>
+                </div>
+                
+                
+                <div class="bauble-holder" style="margin-top: 355px; margin-left: 400px;">
+                    <div class="clip"></div>
+                    <div class="bauble"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 315px; margin-left: 450px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: pink"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 273px; margin-left: 500px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: aqua"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 230px; margin-left: 550px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: blue"></div>
+                </div>
+                
+                
+                <div class="bauble-holder" style="margin-top: 455px; margin-left: 400px;">
+                    <div class="clip"></div>
+                    <div class="bauble"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 415px; margin-left: 450px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: white"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 373px; margin-left: 500px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: gray"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 330px; margin-left: 550px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: orange"></div>
+                </div>
+                
+                
+                <!-- RIGHT SIDE -->
+                <div class="bauble-holder" style="margin-top: 25px; margin-left: 585px;">
+                    <div class="clip"></div>
+                    <div class="bauble"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 71px; margin-left: 635px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: orange"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 113px; margin-left: 685px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: aqua"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 155px; margin-left: 735px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: grey"></div>
+                </div>
+                
+                
+                <div class="bauble-holder" style="margin-top: 125px; margin-left: 585px;">
+                    <div class="clip"></div>
+                    <div class="bauble"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 171px; margin-left: 635px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: black"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 213px; margin-left: 685px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: orange"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 255px; margin-left: 735px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: blue"></div>
+                </div>
+                
+                
+                <div class="bauble-holder" style="margin-top: 225px; margin-left: 585px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: grey"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 271px; margin-left: 635px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: pink"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 313px; margin-left: 685px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: red"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 355px; margin-left: 735px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: black"></div>
+                </div>
+                
+                
+                <div class="bauble-holder" style="margin-top: 325px; margin-left: 585px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: magenta"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 371px; margin-left: 635px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: gold"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 413px; margin-left: 685px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: darkblue"></div>
+                </div>
+                
+                <div class="bauble-holder" style="margin-top: 455px; margin-left: 735px;">
+                    <div class="clip"></div>
+                    <div class="bauble" style="background-color: green"></div>
+                </div>
+
+                
+                <div class="christmas-tree-trunk"></div>
+                
+                <div class="present" style="position: absolute; margin-top: -100px; margin-left: 500px; background-color: magenta">
+                    <div class="band-vertical" style="background-color: pink"></div>
+                    <div class="band-horizontal" style="background-color: pink"></div>
+                </div>
+                
+                <div class="present" style="position: absolute; margin-top: -100px; margin-left: 380px; background-color: gold">
+                    <div class="band-vertical" style="background-color: grey"></div>
+                    <div class="band-horizontal" style="background-color: grey"></div>
+                </div>
+                
+                <div class="present" style="position: absolute; margin-top: -100px; margin-left: 630px; background-color: aqua">
+                    <div class="band-vertical" style="background-color: white"></div>
+                    <div class="band-horizontal" style="background-color: white"></div>
+                </div>
+                
+                <div class="present" style="position: absolute; margin-top: -120px; margin-left: 262px; transform: rotate(45deg); background-color: orange">
+                    <div class="band-vertical" style="background-color: brown"></div>
+                    <div class="band-horizontal" style="background-color: brown"></div>
+                </div>
+                
+                <div class="present" style="position: absolute; margin-top: -200px; margin-left: 560px;">
+                    <div class="band-vertical"></div>
+                    <div class="band-horizontal"></div>
+                </div>
+                
+                <div class="present" style="position: absolute; margin-top: -100px; margin-left: 740px; background-color: pink">
+                    <div class="band-vertical" style="background-color: magenta"></div>
+                    <div class="band-horizontal" style="background-color: magenta"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="firework-scene" class="container" style="margin-top: 0px; background-color: #191919; width: 100%; min-width: 1152px; margin-bottom: 20px; height: 800px;">
+            <div class="container" id="star-container">
+                <div class="title-scene" style="margin-top: 20px;">Sylwester</div>
+                <div class="content-scene" style="margin-top: 80px">Sylwester to szczególny czas.<br> Można się zastanowić nad osiągnięciami minionego roku.</div>
+                
+                <div class="firework-holder" style="position: relative; top: 590px;">
+                    <div class="top"></div>
+                    <div class="firework"></div>
+                    <div class="fuse" style="left: 432px"></div>
+                    <div class="stick"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="player-scene" class="container" style="margin-top: 0px; background-color: #993333; width: 100%; min-width: 1152px; padding: 50px 0 50px 0">
+            <div class="container">
+                <div class="player-header">Radio Świętego Mikołaja</div>
+                
+                <div class="player">
+                    <div class="panel" id="yt-holder" style="margin-left: 30px; width: 450px;">
+                    </div>
+                    
+                    <div class="panel" style="margin-left: 520px; width: 250px; overflow: auto">
+                        <div class="list-item" yt-id="yXQViqx6GMY">
+                            <div style="padding: 5px;">
+                                <div class="item-title">All I want for christmas is you</div>
+                                <div class="item-artist">Mariah Carey</div>
+                            </div>
+                        </div>
+                        
+                        <div class="list-item" yt-id="E8gmARGvPlI">
+                            <div style="padding: 5px;">
+                                <div class="item-title">Last Christmas</div>
+                                <div class="item-artist">Wham!</div>
+                            </div>
+                        </div>
+                        
+                        <div class="list-item" yt-id="mN7LW0Y00kE">
+                            <div style="padding: 5px;">
+                                <div class="item-title">Let it Snow</div>
+                                <div class="item-artist">Dean Martin</div>
+                            </div>
+                        </div>
+                        
+                        <div class="list-item" yt-id="8GavVjuVko0">
+                            <div style="padding: 5px;">
+                                <div class="item-title">Santa Claus is coming to town</div>
+                                <div class="item-artist">Frank Sinatra</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="knob" style="margin-left: 20px"></div>
+                    <div class="knob" style="margin-left: 700px"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer" class="container" style="margin-top: 0px; background-color: #333333; width: 100%; min-width: 1152px; padding: 50px 0 50px 0">
+            <div class="container">
+                <div class="title-scene" style="font-size: 20px; position: relative; text-align: center">Strona ta demonstruje możliwości CSS. Jest ona moją pracą na konkurs organizowany przez MPCForum.pl</div><br>
+                
+                <div style="width: 720px; margin: 0 auto">
+                    <div style="background: url(img/mpc.png); width: 338px; height: 96px; float: left; margin-right: 100px;"></div>
+
+                    <div style="width: 50px; height: 50px; float: left; background: url(img/fs-android2.png); background-size: 50px 50px; margin-top: 20px; margin-right: 10px;"></div>
+                    <div style="font-family: 'Roboto', sans-serif; color: white; font-size: 50px; padding-top: 7px">petergood</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

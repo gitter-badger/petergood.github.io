@@ -1,0 +1,92 @@
+.table {
+    width: 900px;
+    height: 700px;
+    background-color: #BCA154;
+    margin: 0 auto;
+}
+
+.fish-dish-holder {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 280px;
+}
+
+.fish-dish-holder .dish {
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    float: left;
+}
+
+.fish-dish-holder .dish-end-left {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 50px 50px 0;
+    border-color: transparent white transparent transparent;
+    float: left;
+}
+
+.fish-dish-holder .dish-end-right {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 0 50px 50px;
+    border-color: transparent transparent transparent white;
+    float: right;
+}
+
+.fish-holder {
+    position: relative;
+    margin: 0 auto;
+    width: 210px;
+    margin-top: 30px;
+    margin-left: -10px;
+}
+
+.fish-holder .head {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 30px 20px 0;
+    border-color: transparent #808080 transparent transparent;  
+    float: left;
+}
+
+.fish-holder .body {
+    width: 100px;
+    height: 40px;
+    background-color: #808080;
+    float: left;
+}
+
+.fish-holder .back {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 0 20px 60px;
+    border-color: transparent transparent transparent #808080;
+    float: left;
+}
+
+.fish-holder .tail {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 30px 20px 0;
+    border-color: transparent #808080 transparent transparent;  
+    float: left;
+    margin-left: -10px;
+}
+
+.fish-holder .eye {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: #3399FF;
+    position: relative;
+    top: 14px;
+    left: 25px;
+}
