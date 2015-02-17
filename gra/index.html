@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+	<head>
+		<title>Gra planszowa</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script src="js/jquery.min.js"></script>
+		<script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
+		<script src="data/questions.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/input.js"></script>
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+
+	<body>
+		<div id="header">Fizyczna Zabawa</div>
+
+		<div id="login">
+			<input id="username" placeholder="Jak się nazywasz?" />
+			<button id="login-button">Zaloguj się</button>
+
+			<div id="login-footer">
+				Peter Nicholson, Bartosz Pawlikiewicz<br>
+				Aplikacja kożysta z API Firebase.
+			</div>
+		</div>
+
+		<div id="question-holder">
+			<div class="question-title"></div>
+			<div class="answer-holder"></div>
+		</div>
+
+		<div id="info">
+			Czekaj na swoją kolejkę
+		</div>
+	</body>
+</html>

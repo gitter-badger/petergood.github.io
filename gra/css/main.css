@@ -1,0 +1,107 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	color: #2D2D2D;
+}
+
+#header {
+	width: calc(100% - 20px);
+	padding: 10px;
+	text-align: center;
+	color: darkgray;
+	border-bottom: 1px solid #E0E0E0;
+}
+
+#login {
+	padding: 10px;
+}
+
+#login #username {
+	padding: 5px;
+	width: calc(100% - 10px);
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 5px;
+}
+
+#login #login-button {
+	padding: 3px;
+}
+
+#login #login-footer {
+	position: absolute;
+	bottom: 10px;
+	font-size: 13px;
+	font-style: italic;
+}
+
+#question-holder {
+	padding: 10px;
+	display: none;
+}
+
+#question-holder .question-title {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#question-holder .answer-holder .answer {
+	padding: 8px;
+}
+#question-holder .answer-holder .answer:hover {
+	background-color: #E0E0E0;
+}
+#question-holder .answer-holder .answer:active {
+	background-color: #E0E0E0;
+}
+
+#question-holder .answer-holder .answer-input {
+	padding: 5px;
+	width: calc(100% - 10px);
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 5px;
+}
+
+#info {
+	text-align: center;
+	color: #CACACA;
+	padding-top: 50px;
+	display: none;
+}
+
+
+/* CONTROLLER */
+
+.user-container {
+	padding: 10px;
+	border-bottom: 1px solid #DBDBDB;
+}
+
+.user-container .username {
+	float: left;
+}
+
+.user-container .score {
+	float: right;
+}
+
+.button {
+	padding: 10px;
+	background-color: lightgray;
+	display: inline-block;
+	position: absolute;
+	bottom: 10px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.winner {
+	text-align: center;
+	padding-top: 50px;
+}
+.winner .username {
+	font-weight: bold;
+}
+/*body {
+	background-color: #80CC99;
+}*/
